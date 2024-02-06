@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS BOOTSRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--   CSS  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Concert+One&family=Josefin+Sans:wght@100&family=Mitr:wght@300&family=Montserrat+Alternates:ital@1&family=Prata&family=Roboto:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+    <!-- font 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <!-- font 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2aa67c9afd.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a class="navbar-brand class-logo" href="../index.html"> <img src="../img/Img-lupe.png" width="120"
+                    alt="logo principal de lupe"></a>
+        </div>
+
+
+        <nav class=" navbar navbar-expand-lg bg-body-tertiary nav-header">
+            <div class="container-fluid">
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active seudo-hoover" aria-current="page" href="Menu.html">MENU</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle seudo-hoover" href="productos.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTO
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item seudo-hoover" href="productos.html">SOFA</a></li>
+                                <li><a class="dropdown-item seudo-hoover" href="productos.html">RINCONERO</a></li>
+                                <li><a class="dropdown-item seudo-hoover" href="productos.html">SILLAS INDIVIDUALES</a></li>
+                                <li><a class="dropdown-item seudo-hoover" href="productos.html">INDIVIDUALES</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item seudo-hoover" href="productos.html">Todos los productos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active seudo-hoover" aria-current="page" href="promos.html">PROMOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active seudo-hoover" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active seudo-hoover" aria-current="page" href="envio.html">ENVIO</a>
+                        </li>
+                        <li>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success seudo-hoover" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                            </form>
+                        </li>
+
+                    </ul>
+                    <a href="carrito.html" class="class-carrito">
+                        <img src="../img/shopping-bag-1.png" width="30px" alt="shopping bag">
+                    </a>
+
+
+
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h3 class="producto-h3">PRODUCTOS</h3>
+
+        <section class="todos-los-produtos">
+            <div class="card producto-sofa" style="width: 18rem;">
+                <img src="../img/productos/SOFA-PARIS-1 (1).jpg" class="card-img-top" alt="sofa paris">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA PARIS</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ANCHO Y LARGOS : <br>1,80 x 0,90 mts</li>
+                    <li class="list-group-item">MODELO : MERCURY VISION</li>
+                    <li class="list-group-item">$230.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "> <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                </div>
+            </div>
+
+            <!-- <div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-PARIS-1 (1).jpg" alt="sofa paris">
+                     <img src="../img/productos/SOFA-PARIS-2 (2).jpg" alt="sofa paris">
+                    <img src="../img/productos/SOFA-PARIS-3 (3).jpg" alt="sofa paris"> 
+                    <p class="sin-stock">SIN STOCK</p>
+                </div>
+
+                <h3>SOFA PARIS</h3>
+                <p>
+                    ANCHO Y LARGOS : 1,80 x 0,90 mts
+                    <br>MODELO : MERCURY VISION
+                    <br>$230.000
+                </p>
+
+            </div>-->
+            <div class="card" style="width: 18rem;">
+                <img src="../img/productos/SOFA-ROCCO-1  (1).jpg" class="card-img-top" alt="sofa rocco">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA ROCCO</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ANCHO Y LARGO : <br>1,80 x 0,90 mts</li>
+                    <li class="list-group-item">MODELO: ROCCO AZUL</li>
+                    <li class="list-group-item">$275.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "> <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                </div>
+            </div>
+
+             <!--<div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-ROCCO-1  (1).jpg" alt="sofa rocco">
+                    <img src="../img/productos/SOFA-ROCCO-2 (2).jpg" alt="sofa rocco"> 
+
+                <h3>SOFA ROCCO</h3>
+                <p>
+                    ANCHO Y LARGO : 1,80 x 0,90 mts
+                    <br> MODELO : ROCCO AZUL
+                    <br>$275.000
+                </p>
+            </div>
+                </div>-->
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/productos/SOFA-ZARO-OASIS-1(2).jpg" class="card-img-top" alt="sofa zaro oasis">
+                    <div class="card-body">
+                        <h5 class="card-title">SOFA ZARO OASIS</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> ANCHO Y LARGO : <br> 2,10 x 1,00 mts</li>
+                        <li class="list-group-item">MODELO: ZARO OASIS</li>
+                        <li class="list-group-item">$350.000</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">COMPRAR</a>
+                        <a href="carrito.html" class="card-link "> <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            </a>
+                    </div>
+                </div>
+
+            <!-- <div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-ZARO-OASIS-1(2).jpg" alt="sofa zaro oasis">
+                    <img src="../img/productos/SOFA-ZARO-OASIS-2  (2).jpg" alt="sofa zaro oasis">
+                    <img src="../img/productos/SOFA-ZARO-OASIS-3  (3).jpg" alt="sofa zaro oasis">
+                </div>
+
+                <h3>SOFA ZARO OASIS</h3>
+                <p>
+                    ANCHO Y LARGO : 2,10 x 1,00 mts
+                    <br>MODELO : ZARO OASIS
+                    <br>$350.000
+                </p>
+
+            </div> -->
+            <div class="card" style="width: 18rem;">
+                <img src="../img/productos/SOFA-ZARO-CUEROTEX-1  (1).jpg" class="card-img-top" alt="sofa zaro">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA ZARO CUEROTEX</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> ANCHO Y LARGO : <br> 2,10 x 1,00 mts</li>
+                    <li class="list-group-item">MODELO: ZARO CUEROTEX</li>
+                    <li class="list-group-item">$350.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "><i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                </div>
+            </div>
+
+
+
+            <!--<div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-ZARO-CUEROTEX-1  (1).jpg" alt="sofa zaro">
+                     <img src="../img/productos/SOFA-ZARO-CUEROTEX-2 (2).jpg" alt="sofa zaro">
+
+                </div>
+                <h3>SOFA ZARO CUEROTEX</h3>
+                <p>
+                    ANCHO Y LARGO : 2,10 x 1,00 mts
+                    <br>MODELO : ZARO CUEROTEX
+                    <br>$350.000
+                </p>
+            </div>-->
+            <div class="card" style="width: 18rem;">
+                <img src="../img/productos/SOFA-ROCCO-CUEROTEX-1 (1).jpg" class="card-img-top" alt="sofa rocco cuerotex">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA ROCCO CUEROTEX</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> ANCHO Y LARGO : <br> 1,80 x 0,90 mts</li>
+                    <li class="list-group-item">MODELO: ROCCO CUEROTEX </li>
+                    <li class="list-group-item">$250.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "> <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-ROCCO-CUEROTEX-1 (1).jpg" alt=" sofa rocco cuerotex">
+                    <img src="../img/productos/SOFA-ZARO-CUEROTEX-2 (2).jpg" alt="sofa rocca cuerotex"> 
+                </div> 
+
+                <h3>SOFA ROCCO CUEROTEX</h3>
+                <p>
+                    ANCHO Y LARGO : 1,80 x 0,90 mts
+                    <br>MODELO : ROCCO CUEROTEX
+                    <br>$250.000
+                </p>
+            </div> -->
+            <div class="card" style="width: 18rem;">
+                <img src="../img/productos/SOFA-BARCELONA-NEGRO .jpg" class="card-img-top" alt="sofa barceola">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA BARCELONA </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> ANCHO Y LARGO : <br>2,00 x 0,90 mts</li>
+                    <li class="list-group-item">MODELO: BARCELONA </li>
+                    <li class="list-group-item">$300.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "> <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                </div>
+            </div>
+            
+
+            <!-- <div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-BARCELONA-NEGRO .jpg" alt="sofa barceola">
+                    <p class="sin-stock">SIN STOCK</p>
+                </div>
+
+                <h3>SOFA BARCELONA </h3>
+                <p>
+                    ANCHO Y LARGO : 2,00 x 0,90 mts
+                    <br>MODELO : BARCELONA
+                    <br>$300.000
+                </p>
+            </div> -->
+
+            <div class="card" style="width: 18rem;">
+                <img src="../img/productos/SOFA-CAMA-VERDE .jpg" class="card-img-top" alt="sofa cama">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA CAMA QUANTUM </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> ANCHO Y LARGO : <br>1,80 x 0,90 mts</li>
+                    <li class="list-group-item">MODELO: CAMA QUANTUM</li>
+                    <li class="list-group-item">$365.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "><i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                </div>
+            </div>
+
+
+
+
+            <!-- <div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-CAMA-VERDE .jpg" alt="sofa cama">
+                </div>
+
+                <h3>SOFA CAMA QUANTUM</h3>
+                <p>
+                    ANCHO Y LARGO : 1,80 x 0,90 mts
+                    <br>MODELO : CAMA QUANTUM
+                    <br>$365.000
+                </p>
+            </div> -->
+            <div class="card" style="width: 18rem;">
+                <img src="../img/productos/SOFA-CAMA-AZUL-PANA .jpg"  height="285px" class="card-img-top" alt="sofa cama">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA CAMA PANA </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> ANCHO Y LARGO : <br>1,80 x 0,90 mts</li>
+                    <li class="list-group-item">MODELO: SOFA CAMA PANA</li>
+                    <li class="list-group-item">$365.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "><i class="fa-solid fa-cart-shopping fa-lg"></i>
+                </div>
+            </div>
+
+
+            <!--  <div class="producto-sofa">
+                <div>
+                   <img src="../img/productos/SOFA-CAMA-AZUL .jpg" alt="sofa cama"> 
+                    <img src="../img/productos/SOFA-CAMA-AZUL-PANA .jpg" height="255px" alt="sofa cama">
+                </div>
+
+                <h3>SOFA CAMA PANA</h3>
+                <p>
+                    ANCHO Y LARGO : 1,80 x 0,90 mts
+                    <br>MODELO : CAMA PANA
+                    <br>$365.000
+                </p>
+            </div>-->
+            <div class="card" style="width: 18rem;">
+                <img src="../img/productos/SOFA-CAMA-POISON.jpg" class="card-img-top" alt="sofa cama">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA CAMA POISON </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> ANCHO Y LARGO : <br>1,80 x 0,90 mts</li>
+                    <li class="list-group-item">MODELO: SOFA CAMA POISON</li>
+                    <li class="list-group-item">$365.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "> <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                </div>
+            </div>
+
+
+
+            <!--  <div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-CAMA-POISON.jpg" alt="sofa cama">
+                </div>
+
+                <h3>SOFA CAMA POISON</h3>
+                <p>
+                    ANCHO Y LARGO : 1,80 x 0,90 mts
+                    <br>MODELO : CAMA POISON
+                    <br>$365.000
+                </p>
+            </div>-->
+
+            <div class="card" style="width: 18rem;">
+                <img src="../img/productos/SOFA-CAPITONE-DOBLE-1.jpg" class="card-img-top" alt="sofa capitone">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA CAPITONE</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> ANCHO Y LARGO : <br> 1,30 x 0,60 mts</li>
+                    <li class="list-group-item">MODELO: CAPITONE DOS CUERPOS</li>
+                    <li class="list-group-item">$185.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "><i class="fa-solid fa-cart-shopping fa-lg"></i>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-CAPITONE-DOBLE-1.jpg" alt="sofa capitone">
+                   <img src="../img/productos/SOFA-CAPITONE-DOBLE-2 .jpg" alt="sofa capitone"> 
+                    <p class="sin-stock">SIN STOCK</p>
+                </div>
+
+                <h3>SOFA CAPITONE</h3>
+                <p>
+                    ANCHO Y LARGO : 1,30 x 0,60 mts
+                    <br>MODELO : CAPITONE DOS CUERPOS
+                    <br>$185.000
+                </p>
+            </div> -->
+            <div class="card" style="width: 18rem;">
+                <img src="../img/productos/SOFA-CATALINA-1 .jpg" class="card-img-top" alt="sofa catalina">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA CATALINA</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> ANCHO Y LARGO : <br> 2,40 x 1,00 mts</li>
+                    <li class="list-group-item">MODELO: CATALINA</li>
+                    <li class="list-group-item">$395.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link"> <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                </div>
+            </div>
+
+
+
+           <!-- <div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-CATALINA-1 .jpg" alt="sofa catalina">
+                     <img src="../img/productos/SOFA-CATALINA-2.jpg" alt="sofa catalina">
+
+                <h3>SOFA CATALINA</h3>
+                <p>
+                    ANCHO Y LARGO : 2,40 x 1,00 mts
+                    <br>MODELO : CATALINA
+                    <br>$395.000
+                </p>
+            </div> 
+                </div>-->
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/productos/SOFA-CHEESTER.jpg" class="card-img-top" alt="sofa cheester">
+                    <div class="card-body">
+                        <h5 class="card-title">SOFA CHEESTER</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> ANCHO Y LARGO : <br>  1,80 x 0,90 mts</li>
+                        <li class="list-group-item">MODELO: CHEESTER DOS CUERPOS</li>
+                        <li class="list-group-item">$315.000</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">COMPRAR</a>
+                        <a href="carrito.html" class="card-link "> <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            </a>
+                    </div>
+                </div>
+
+
+
+
+            <!-- <div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-CHEESTER.jpg" alt="sofa cheester">
+                </div>
+
+                <h3>SOFA CHEESTER</h3>
+                <p>
+                    ANCHO Y LARGO : 1,80 x 0,90 mts
+                    <br>MODELO : CHEESTER DOS CUERPOS
+                    <br>$315.000
+                </p>
+            </div> -->
+            <div class="card" style="width: 18rem;">
+                <img src="../img/productos/SOFA-LUNA-1 .jpg" class="card-img-top" alt="sofa luna">
+                <div class="card-body">
+                    <h5 class="card-title">SOFA LUNA</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> ANCHO Y LARGO : <br> 2,40 x 0,90 mts</li>
+                    <li class="list-group-item">MODELO: LUNA DOS CUERPOS</li>
+                    <li class="list-group-item">$370.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "> <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                        </a>
+                </div>
+            </div>
+
+
+
+            <!--<div class="producto-sofa">
+                <div>
+                    <img src="../img/productos/SOFA-LUNA-1 .jpg" alt="sofa luna">
+                     <img src="../img/productos/SOFA-LUNA-2.jpg" alt="sofa luna"> 
+                </div>
+
+                <h3>SOFA LUNA</h3>
+                <p>
+                    ANCHO Y LARGO : 2,40 x 0,90 mts
+                    <br>MODELO : LUNA DOS CUERPOS
+                    <br>$370.000
+                </p>
+            </div>
+            <div>-->
+
+            </div>
+        </section>
+
+
+
+
+
+        <footer class="footer">
+
+            <div class="footer-div-navegacion">
+                <h5>Navegacion</h5>
+                <a href="../pages/productos.html">Productos</a>
+                <br><a href="../pages/promos.html">Promos</a>
+                <br><a href="../pages/contacto.html">Contacto</a>
+                <br><a href="../pages/envio.html">Envio</a>
+            </div>
+            <div class="footer-div-mediosdepago">
+                <h5>Medios de pago</h5>
+                <img src="../img/visa.png" width="40" alt="visa">
+                <img src="../img/mastercard.png" width="40" alt="mastercard">
+                <img src="../img/tarjeta-naranjax.png" width="40" alt="tarjeta naranja x">
+                <img src="../img/transferencia.png" width="40" alt="">
+            </div>
+            <div class="footer-div-envio">
+                <h5>Formas de envio</h5>
+                <a href="pages/envio.html">
+                    <img src="../img/retiro-local.png" width="40" alt="">
+                </a>
+                <a href="pages/envio.html">
+                    <img src="../img/envio-domicilio.png" width="40" alt="">
+                </a>
+            </div class="footer-div-redes">
+            <h5>REDES SOCIALES</h5>
+            <a href="https://www.instagram.com/lupehomesf/?utm_source=ig_web_button_share_sheet" target="_blank">
+                <img src="../img/img-inta-negra.png" width="50" alt="instagram">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100072564930763&locale=es_LA" target="_blank">
+                <img src="../img/img-facebook-negro.png" width="37" alt="facebook">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=543564381755&text=%C2%A1HOLA!%20%C2%A1C%C3%B3mo%20est%C3%A1s%3F"
+                target="_blank">
+                <img src="../img/img-wpp-negra.png" width="44" alt="whatsapp">
+            </a>
+            </div>
+            <div class="footer-contacto">
+                <h5>Contacto</h5>
+                <img src="../img/emote-call.png" width="15" alt="telefono"> 351-6221335
+                <br><img src="../img/emote-email.png" width="15" alt="email"> Lupehome@hotmail.com
+                <br><img src="../img/emote-ubicaicon.png" width="15" alt="ubicacion"> San Francisco / Cordoba
+            </div>
+            <div>
+
+        </footer>
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

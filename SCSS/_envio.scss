@@ -1,0 +1,87 @@
+.class-main-envio {
+   
+    font-family: 'Concert One', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Mitr', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Prata', serif;
+    color:$cl-black;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    border: 1px solid $cl-black-env;
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "foto1 foto1"
+        "tiempo tiempo"
+        "retiro retiro "
+        "envios envios"
+        "costos costos "
+        "realizamos foto2"
+        "realizamos foto2";
+
+
+    .class-main-envio-foto-1 {
+        grid-area: foto1;
+        @include flex-envio (column, wrap, center);
+    }
+
+    .class-main-envio-h1 {
+        grid-area: tiempo;
+        @include flex-envio (column, wrap, flex-start);
+
+        .tiempo {
+            margin: 10px 0px 5px 0px;
+            border-bottom: 10px inset $cl-black;
+            border-bottom-style: double;
+        }
+
+    }
+
+    .class-main-envio-h3-1 {
+        grid-area: retiro;
+        @include flex-envio (column, wrap, flex-start);
+        margin: 5px 0px 0px 0px;
+
+        p {
+            padding: 0px 0px 10px 0px;
+        }
+    }
+
+    .class-main-envio-h3-2 {
+        grid-area: envios;
+        @include flex-envio (column, wrap, flex-start);
+        background-color:$cl-black-env;
+        width: 30%;
+    
+    }
+    
+    .class-main-envio-h4 {
+        grid-area: costos;
+        @include flex-envio (column, wrap, flex-start);
+        border-bottom: 1px solid $cl-black;
+        margin: 5px 0px 5px 0px;
+        width: 25%;
+    }
+    
+    .class-main-envio-p {
+        grid-area: realizamos;
+        @include flex-envio (column, wrap, flex-start);
+        margin: 5px 0px 5px 0px;
+    }
+    
+    .class-main-envio-foto-2 {
+        grid-area: foto2;
+        @include flex-div-cont(column, wrap);
+        width: 1fr;
+    }
+
+
+} 
+.producto-h3 {
+        text-align: center;
+        border: 1px solid $cl-black;
+        width: 50%;
+        margin: 15px auto;
+        padding: 15px;
+    }

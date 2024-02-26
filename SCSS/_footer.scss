@@ -1,0 +1,75 @@
+footer.footer {
+    @include flex-footer (row, wrap, flex-start, space-evenly);
+    background-color: $bg-footer;
+    border-top: 1px solid $cl-black;
+    margin: 20px 0px 0px 0px;
+    padding: 30px 0px 20px 0px;
+    color: $cl-black;
+
+    .footer-div-navegacion {
+
+        @include flex-footer-nav (column, wrap, flex-start);
+
+        a {
+            color: $cl-black;
+            text-decoration: none;
+            padding: 5px;
+
+            &:hover {
+                color: $cl-ft-hv;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .footer-div-mediosdepago {
+
+        a {
+            .img-card {
+                padding: 2px;
+            }
+        }
+    }
+
+    .footer-div-envio {
+
+        a {
+            .img-card {
+                padding: 2px;
+            }
+        }
+    }
+
+    .footer-redes-sociales {
+        @include flex-footer-div (column, wrap);
+
+        a {
+            color: $cl-black;
+            padding: 10px;
+            text-decoration: none;
+
+            &:hover {
+                color: $cl-ft-hv;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .footer-contacto {
+
+        @include flex-footer-div (column, wrap);
+
+        a {
+            color: $cl-black;
+            padding: 10px;
+            text-decoration: none;
+
+            &:hover {
+                color: $cl-ft-hv;
+                text-decoration: underline;
+
+            }
+        }
+    }
+
+}

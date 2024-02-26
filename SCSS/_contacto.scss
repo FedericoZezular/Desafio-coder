@@ -1,0 +1,50 @@
+.main-contacto {
+    @include flex-main-cont (column, flex-start);
+    width: 90%;
+    border: 1px solid $cl-black;
+    padding: 50px;
+    margin: 2px auto;
+    border: 1px solid $cl-bor-cont;
+    background-color: $bg-cont;
+
+    h1 {
+        border-bottom: 1px solid $cl-border;
+    }
+
+    div {
+        @include flex-div-cont (column, wrap);
+        width: 800px;
+
+        padding: 10px;
+        margin: 10px;
+
+        label {
+            padding: 5px;
+        }
+
+        input {
+            @include flex-div-cont (column, wrap);
+            height: 35px;
+        }
+
+
+    }
+
+    .class-iframe-h3 {
+        @include flex-div-cont (column, wrap);
+        border-bottom: 1px solid $br-cl;
+    }
+
+    .class-iframe-h5 {
+        @include flex-div-cont (column, wrap);
+        margin: 15px 20px;
+    }
+
+    .class-iframe {
+        @include flex-div-cont (column, wrap);
+        width: 90%;
+    }
+
+
+
+}

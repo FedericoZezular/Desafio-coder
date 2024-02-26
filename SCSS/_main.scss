@@ -1,0 +1,116 @@
+main.main {
+    @include grid-main (center, center);
+    padding: 0px 0px 0px 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "carrusel carrusel carrusel"
+        "cuotas transferencia wpp "
+        "sofa sillas respaldo"
+        "recomendaciones recomendaciones recomendaciones";
+
+
+    gap: 50px 0px;
+
+    .section-carru {
+        grid-area: carrusel;
+        @include flex-main (column, wrap, center);
+    }
+
+    .div-main-cuotas {
+        grid-area: cuotas;
+        @include flex-main (column, wrap, center);
+    }
+
+    .div-main-transferencia {
+        grid-area: transferencia;
+        @include flex-main (column, wrap, center);
+        border-left: 2px solid $cl-bor;
+        border-right: 2px solid $cl-bor;
+    }
+
+    .div-main-wpp {
+        grid-area: wpp;
+        @include flex-main (column, wrap, center);
+    }
+
+    .div-img-sofa {
+        grid-area: sofa;
+
+    }
+
+    .div-img-sillas {
+        grid-area: sillas;
+    }
+
+    .div-img-respaldo {
+        grid-area: respaldo;
+    }
+
+    .section-prod {
+        grid-area: recomendaciones;
+
+    }
+
+
+
+    .div-2 {
+        display: flex;
+        color: $cl-div;
+        padding: 0px 0px;
+    }
+
+    .div-2 div {
+        margin: 10px 10px;
+    }
+
+    .div-respaldo-sillas-sofa {
+
+        h3 {
+
+            color: $cl-white;
+            text-shadow: 1.5px 1.5px $cl-div;
+            border: 2px outset $cl-black;
+            background: $bg-h3;
+            box-shadow: 0 4px 30px $box-shadow-h3;
+            backdrop-filter: blur(2.8px);
+            -webkit-backdrop-filter: blur(2.8px);
+        }
+
+    }
+
+    .card {
+        width: 60%;
+        text-align: center;
+        color: $cl-white;
+    }
+
+
+    .text-bg-dark {
+        color: $cl-white !important;
+        background-color: white(var(--bs-dark-rgb), var(--bs-bg-opacity, 1)) !important;
+    }
+
+    .seudo-img-hover:hover {
+        zoom: 1.5;
+        border: none;
+        border-radius: none;
+
+        h3 {
+            height: 100%;
+            font-size: 100%;
+            border: none;
+            background: $bg-h3;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px$box-shadow-h3;
+            backdrop-filter: blur(2.8px);
+            -webkit-backdrop-filter: blur(2.8px);
+            @include flex-h3 (column, wrap, center);
+            font-size: 25px;
+        }
+
+
+    }
+
+
+
+}

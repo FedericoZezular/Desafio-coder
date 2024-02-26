@@ -1,0 +1,101 @@
+
+// mixin header
+@mixin flex-header ($direccion, $wrap){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+}
+@mixin flex-div ($direccion, $wrap, $aitems,){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    align-items: $aitems;
+}
+@mixin flex-nav ($direccion, $wrap, $aitems,$jcontent){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    align-items: $aitems;
+    justify-content: $jcontent;
+}
+@mixin flex-carrito($position, $display, $wrap){
+    position: $position;
+    display: $display;
+    flex-wrap: $wrap;
+}
+
+// mixins mains
+@mixin grid-main ($jitems, $aitems){
+    display: grid;
+    justify-items:$jitems;
+    align-items: $aitems;
+}
+@mixin flex-main($direccion, $wrap, $aitems){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    align-items: $aitems;
+}
+@mixin flex-h3 ($direccion, $wrap, $jcontent){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap ;
+    justify-content: $jcontent;
+}
+
+// mixins Footer
+@mixin flex-footer($direccion, $wrap, $aitems, $jcontent, ){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    align-items: $aitems;
+    justify-content: $jcontent;
+}
+@mixin flex-footer-nav ($direccion, $wrap, $aitems){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    align-items: $aitems
+}
+@mixin flex-footer-div ($direccion, $wrap){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+}
+
+// productos
+
+@mixin flex-prod ($jcontent, $wrap){
+    display: flex;
+    justify-content: $jcontent;
+    flex-wrap: $wrap;
+}
+@mixin flex-card ($direccion, $wrap, $aitems, $jcontent ){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    align-items: $aitems;
+    justify-content: $jcontent;
+}
+
+// contacto
+
+@mixin flex-main-cont ($direccion, $aitems){
+    display: flex;
+    flex-direction: $direccion;
+    align-items: $aitems;
+}
+@mixin flex-div-cont ($direccion, $wrap, ){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+}
+
+// envio
+
+@mixin flex-envio ($direccion, $wrap, $aitems){
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    align-items: $aitems;
+}

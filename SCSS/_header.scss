@@ -1,0 +1,82 @@
+header.header {
+    position: sticky;
+    top: 0px;
+    background-color: $bg-white ;
+    box-shadow: -1px 6px 8px 0 $box-shadow ;
+    z-index: 100;
+    @include flex-header (column, wrap);
+    padding: 1px 0px;
+
+    div {
+        .class-logo {
+            @include flex-div (column, wrap, center);
+            margin: 0px 0px 0px 0px;
+            padding: 1px 0px;
+        }
+    }
+
+
+
+    nav {
+        @include flex-nav (column, wrap, center, space-around);
+
+        ul {
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px outset rgba(255, 255, 255, 0.381);
+            background-color: rgb(133, 133, 133);
+            width: 100%;
+        }
+    }
+
+    .seudo-hoover:hover {
+        color: $cl-hd-hv;
+        text-decoration: underline;
+        background-color: $bg-hd-hv;
+        font-size: small;
+
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        width: auto;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+    
+        padding: 0px 90px 0px 90px;
+        background-color: $bg-white ;
+    }
+
+    .bg-body-tertiary {
+        --bs-bg-opacity: 1;
+        background-color: white(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .btn-outline-success {
+        --bs-btn-color: $cl-black;
+        --bs-btn-border-color: #0000003f;
+        --bs-btn-hover-color: $cl-white;
+        --bs-btn-hover-bg: $cl-black;
+        --bs-btn-hover-border-color:$cl-black;
+        --bs-btn-focus-shadow-rgb: 25, 135, 84;
+        --bs-btn-active-color: $cl-white;
+        --bs-btn-active-bg:$cl-black;
+        --bs-btn-active-border-color: $cl-black;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: $cl-black;
+        --bs-btn-disabled-bg: transparent;
+        --bs-btn-disabled-border-color:$cl-black;
+        --bs-gradient: none;
+    }
+     div{
+        .class-carrito {
+            @include flex-carrito(absolute, inline-block, wrap);
+            right: 110px;
+            bottom: 45px;
+        }
+     }
+     
+}

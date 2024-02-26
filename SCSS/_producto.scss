@@ -1,0 +1,45 @@
+.main-productos {
+    .producto-h3 {
+        text-align: center;
+        border: 1px solid $cl-black;
+        width: 50%;
+        margin: 15px auto;
+        padding: 15px;
+
+    }
+    
+    .todos-los-produtos {
+    @include flex-prod (center, wrap);
+    
+    .card {
+    margin: 10px;
+    background-color: $bg-gris;
+    box-shadow: 0px 0px 8px 0 $cl-shadow;
+
+
+    .card-body {
+        flex: 1 1 auto;
+        padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+        color: var(--bs-card-color);
+        @include flex-card (nowrap, row, center, space-between);
+
+        .card-link {
+            color: $cl-white;
+
+            &:hover {
+                color: $cl-black;
+            }
+        }
+    }
+}
+
+}
+
+
+
+
+}
+
+
+
+

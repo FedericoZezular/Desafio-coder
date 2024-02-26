@@ -1,0 +1,88 @@
+@media screen and (max-width:960px) {
+    .main-contacto {
+        div {
+            @include flex-div-cont (column, wrap);
+            width: 500px;
+            padding: 10px;
+            margin: 10px;
+
+            label {
+                padding: 5px;
+            }
+
+            input {
+                @include flex-div-cont (column, wrap);
+                height: 35px;
+            }
+
+        }
+
+
+    }
+
+}
+@media screen and (max-width:620px) {
+    .main-contacto {
+        div {
+            @include flex-div-cont (column, wrap);
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+
+            label {
+                padding: 6px;
+            }
+
+            input {
+                @include flex-div-cont (column, wrap);
+                height: 34px;
+            }
+
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .class-main-envio {
+        @include flex-h3 (column, wrap, center)
+    }
+}
+
+@media screen and (max-width: 578px) {
+    main.main {
+        @include flex-footer (column, wrap, center, center);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .class-main-envio {
+        @include flex-h3 (column, wrap, center);
+
+        .class-main-envio-foto-2 {
+            grid-area: foto2;
+            @include flex-div-cont(column, wrap);
+            width: 200px;
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

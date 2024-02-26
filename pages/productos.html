@@ -11,21 +11,8 @@
     <!--   CSS  -->
     <link rel="stylesheet" href="../css/style.css">
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Concert+One&family=Josefin+Sans:wght@100&family=Mitr:wght@300&family=Montserrat+Alternates:ital@1&family=Prata&family=Roboto:ital,wght@0,400;1,300&display=swap"
-        rel="stylesheet">
-    <!-- font 3 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-
-    <!-- font 3 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-
+    <!-- java -->
     <script src="https://kit.fontawesome.com/2aa67c9afd.js" crossorigin="anonymous"></script>
 
 
@@ -33,7 +20,7 @@
 
 <body>
 
-    <header>
+    <header class="header">
         <div>
             <a class="navbar-brand class-logo" href="../index.html"> <img src="../img/img-lupe.png" width="120"
                     alt="logo principal de lupe"></a>
@@ -104,11 +91,12 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-productos">
         <h3 class="producto-h3">PRODUCTOS</h3>
 
         <section class="todos-los-produtos">
             <div class="card producto-sofa" style="width: 18rem;">
+
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -156,9 +144,7 @@
                         <div class="carousel-item">
                             <img src="../img/productos/SOFA-ROCCO-2 (2).jpg" class="d-block w-100" alt="...">
                         </div>
-                        <!-- <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div> -->
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
                         data-bs-slide="prev">
@@ -185,20 +171,6 @@
                     </a>
                 </div>
             </div>
-
-            <!--<div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-ROCCO-1  (1).jpg" alt="sofa rocco">
-                    <img src="../img/productos/SOFA-ROCCO-2 (2).jpg" alt="sofa rocco"> 
-
-                <h3>SOFA ROCCO</h3>
-                <p>
-                    ANCHO Y LARGO : 1,80 x 0,90 mts
-                    <br> MODELO : ROCCO AZUL
-                    <br>$275.000
-                </p>
-            </div>
-                </div>-->
 
             <div class="card" style="width: 18rem;">
                 <div id="carouselExample3" class="carousel slide">
@@ -239,21 +211,6 @@
                 </div>
             </div>
 
-            <!-- <div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-ZARO-OASIS-1(2).jpg" alt="sofa zaro oasis">
-                    <img src="../img/productos/SOFA-ZARO-OASIS-2  (2).jpg" alt="sofa zaro oasis">
-                    <img src="../img/productos/SOFA-ZARO-OASIS-3  (3).jpg" alt="sofa zaro oasis">
-                </div>
-
-                <h3>SOFA ZARO OASIS</h3>
-                <p>
-                    ANCHO Y LARGO : 2,10 x 1,00 mts
-                    <br>MODELO : ZARO OASIS
-                    <br>$350.000
-                </p>
-
-            </div> -->
             <div class="card" style="width: 18rem;">
                 <div id="carouselExample4" class="carousel slide">
                     <div class="carousel-inner">
@@ -263,9 +220,7 @@
                         <div class="carousel-item">
                             <img src="../img/productos/SOFA-ZARO-CUEROTEX-2 (2).jpg" class="d-block w-100" alt="...">
                         </div>
-                        <!-- <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>-->
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4"
                         data-bs-slide="prev">
@@ -288,23 +243,11 @@
                 </ul>
                 <div class="card-body">
                     <a href="#" class="card-link">COMPRAR</a>
-                    <a href="carrito.html" class="card-link "><i class="fa-solid fa-cart-shopping fa-lg"></i>
-                    </a>
+                    <a href="carrito.html" class="card-link "><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
                 </div>
             </div>
-            <!--<div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-ZARO-CUEROTEX-1  (1).jpg" alt="sofa zaro">
-                     <img src="../img/productos/SOFA-ZARO-CUEROTEX-2 (2).jpg" alt="sofa zaro">
 
-                </div>
-                <h3>SOFA ZARO CUEROTEX</h3>
-                <p>
-                    ANCHO Y LARGO : 2,10 x 1,00 mts
-                    <br>MODELO : ZARO CUEROTEX
-                    <br>$350.000
-                </p>
-            </div>-->
+            </div>
 
             <div class="card" style="width: 18rem;">
                 <div id="carouselExample5" class="carousel slide">
@@ -312,12 +255,7 @@
                         <div class="carousel-item active">
                             <img src="../img/productos/SOFA-ROCCO-CUEROTEX-1 (1).jpg" class="d-block w-100" alt="...">
                         </div>
-                        <!-- <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div> -->
-                        <!-- <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div> -->
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5"
                         data-bs-slide="prev">
@@ -347,19 +285,7 @@
 
 
 
-            <!-- <div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-ROCCO-CUEROTEX-1 (1).jpg" alt=" sofa rocco cuerotex">
-                    <img src="../img/productos/SOFA-ZARO-CUEROTEX-2 (2).jpg" alt="sofa rocca cuerotex"> 
-                </div> 
 
-                <h3>SOFA ROCCO CUEROTEX</h3>
-                <p>
-                    ANCHO Y LARGO : 1,80 x 0,90 mts
-                    <br>MODELO : ROCCO CUEROTEX
-                    <br>$250.000
-                </p>
-            </div> -->
             <div class="card" style="width: 18rem;">
                 <div id="carouselExample6" class="carousel slide">
                     <div class="carousel-inner">
@@ -367,12 +293,7 @@
                             <img src="../img/productos/SOFA-BARCELONA-NEGRO .jpg" class="d-block w-100" alt="...">
                             <!-- <p class="sin-stock">SIN STOCK</p> -->
                         </div>
-                        <!-- <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div> -->
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6"
                         data-bs-slide="prev">
@@ -401,19 +322,7 @@
             </div>
 
 
-            <!-- <div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-BARCELONA-NEGRO .jpg" alt="sofa barceola">
-                    
-                </div>
 
-                <h3>SOFA BARCELONA </h3>
-                <p>
-                    ANCHO Y LARGO : 2,00 x 0,90 mts
-                    <br>MODELO : BARCELONA
-                    <br>$300.000
-                </p>
-            </div> -->
 
             <div class="card" style="width: 18rem;">
                 <div id="carouselExample7" class="carousel slide">
@@ -421,12 +330,7 @@
                         <div class="carousel-item active">
                             <img src="../img/productos/SOFA-CAMA-VERDE .jpg" class="d-block w-100" alt="...">
                         </div>
-                        <!-- <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="...">
-                      </div> -->
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample7"
                         data-bs-slide="prev">
@@ -454,21 +358,6 @@
                 </div>
             </div>
 
-
-
-
-            <!-- <div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-CAMA-VERDE .jpg" alt="sofa cama">
-                </div>
-
-                <h3>SOFA CAMA QUANTUM</h3>
-                <p>
-                    ANCHO Y LARGO : 1,80 x 0,90 mts
-                    <br>MODELO : CAMA QUANTUM
-                    <br>$365.000
-                </p>
-            </div> -->
             <div class="card" style="width: 18rem;">
                 <div id="carouselExample8" class="carousel slide">
                     <div class="carousel-inner">
@@ -480,9 +369,7 @@
                             <img src="../img/productos/SOFA-CAMA-AZUL-PANA .jpg" height="290px" width="286px"
                                 class="d-block " alt="...">
                         </div>
-                        <!-- <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div>-->
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample8"
                         data-bs-slide="prev">
@@ -505,77 +392,9 @@
                 </ul>
                 <div class="card-body">
                     <a href="#" class="card-link">COMPRAR</a>
-                    <a href="carrito.html" class="card-link "><i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <a href="carrito.html" class="card-link "><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
                 </div>
             </div>
-
-
-            <!--  <div class="producto-sofa">
-                <div>
-                   <img src="../img/productos/SOFA-CAMA-AZUL .jpg" alt="sofa cama"> 
-                    <img src="../img/productos/SOFA-CAMA-AZUL-PANA .jpg" height="255px" alt="sofa cama">
-                </div>
-
-                <h3>SOFA CAMA PANA</h3>
-                <p>
-                    ANCHO Y LARGO : 1,80 x 0,90 mts
-                    <br>MODELO : CAMA PANA
-                    <br>$365.000
-                </p>
-            </div>-->
-            <div class="card" style="width: 18rem;">
-                <div id="carouselExample9" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../img/productos/SOFA-CAMA-POISON.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <!-- <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                       </div> -->
-                        <!-- <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div> -->
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample9"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample9"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">SOFA CAMA POISON </h5>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> ANCHO Y LARGO : <br>1,80 x 0,90 mts</li>
-                    <li class="list-group-item">MODELO: SOFA CAMA <br>POISON</li>
-                    <li class="list-group-item">$365.000</li>
-                </ul>
-                <div class="card-body">
-                    <a href="#" class="card-link">COMPRAR</a>
-                    <a href="carrito.html" class="card-link "> <i class="fa-solid fa-cart-shopping fa-lg"></i>
-                    </a>
-                </div>
-            </div>
-
-
-
-            <!--  <div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-CAMA-POISON.jpg" alt="sofa cama">
-                </div>
-
-                <h3>SOFA CAMA POISON</h3>
-                <p>
-                    ANCHO Y LARGO : 1,80 x 0,90 mts
-                    <br>MODELO : CAMA POISON
-                    <br>$365.000
-                </p>
-            </div>-->
 
             <div class="card" style="width: 18rem;">
                 <div id="carouselExample10" class="carousel slide">
@@ -586,9 +405,7 @@
                         <div class="carousel-item">
                             <img src="../img/productos/SOFA-CAPITONE-DOBLE-2 .jpg" class="d-block w-100" alt="...">
                         </div>
-                        <!-- <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div> -->
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample10"
                         data-bs-slide="prev">
@@ -611,26 +428,13 @@
                 </ul>
                 <div class="card-body">
                     <a href="#" class="card-link">COMPRAR</a>
-                    <a href="carrito.html" class="card-link "><i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    <a href="carrito.html" class="card-link "><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
                 </div>
             </div>
 
 
 
-            <!-- <div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-CAPITONE-DOBLE-1.jpg" alt="sofa capitone">
-                   <img src="../img/productos/SOFA-CAPITONE-DOBLE-2 .jpg" alt="sofa capitone"> 
-                    <p class="sin-stock">SIN STOCK</p>
-                </div>
 
-                <h3>SOFA CAPITONE</h3>
-                <p>
-                    ANCHO Y LARGO : 1,30 x 0,60 mts
-                    <br>MODELO : CAPITONE DOS CUERPOS
-                    <br>$185.000
-                </p>
-            </div> -->
             <div class="card" style="width: 18rem;">
                 <div id="carouselExample11" class="carousel slide">
                     <div class="carousel-inner">
@@ -640,9 +444,7 @@
                         <div class="carousel-item">
                             <img src="../img/productos/SOFA-CATALINA-2.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <!-- <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div> -->
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample11"
                         data-bs-slide="prev">
@@ -660,7 +462,7 @@
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"> ANCHO Y LARGO : <br> 2,40 x 1,00 mts</li>
-                    <li class="list-group-item">MODELO: <br>CATALINA</li>
+                    <li class="list-group-item">MODELO: CATALINA</li>
                     <li class="list-group-item">$395.000</li>
                 </ul>
                 <div class="card-body">
@@ -671,31 +473,14 @@
 
 
 
-            <!-- <div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-CATALINA-1 .jpg" alt="sofa catalina">
-                     <img src="../img/productos/SOFA-CATALINA-2.jpg" alt="sofa catalina">
 
-                <h3>SOFA CATALINA</h3>
-                <p>
-                    ANCHO Y LARGO : 2,40 x 1,00 mts
-                    <br>MODELO : CATALINA
-                    <br>$395.000
-                </p>
-            </div> 
-                </div>-->
             <div class="card" style="width: 18rem;">
                 <div id="carouselExample12" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../img/productos/SOFA-CHEESTER.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <!-- <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div> -->
-                        <!-- <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                      </div> -->
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample12"
                         data-bs-slide="prev">
@@ -722,18 +507,7 @@
                     </a>
                 </div>
             </div>
-            <!-- <div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-CHEESTER.jpg" alt="sofa cheester">
-                </div>
 
-                <h3>SOFA CHEESTER</h3>
-                <p>
-                    ANCHO Y LARGO : 1,80 x 0,90 mts
-                    <br>MODELO : CHEESTER DOS CUERPOS
-                    <br>$315.000
-                </p>
-            </div> -->
 
 
             <div class="card" style="width: 18rem;">
@@ -745,9 +519,7 @@
                         <div class="carousel-item">
                             <img src="../img/productos/SOFA-LUNA-2.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <!-- <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div> -->
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample13"
                         data-bs-slide="prev">
@@ -774,22 +546,42 @@
                     </a>
                 </div>
             </div>
-             <!--<div class="producto-sofa">
-                <div>
-                    <img src="../img/productos/SOFA-LUNA-1 .jpg" alt="sofa luna">
-                     <img src="../img/productos/SOFA-LUNA-2.jpg" alt="sofa luna"> 
+
+            <div class="card" style="width: 18rem;">
+                <div id="carouselExample9" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/productos/SOFA-CAMA-POISON.jpg" class="d-block w-100" alt="...">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample9"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample9"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-
-                <h3>SOFA LUNA</h3>
-                <p>
-                    ANCHO Y LARGO : 2,40 x 0,90 mts
-                    <br>MODELO : LUNA DOS CUERPOS
-                    <br>$370.000
-                </p>
+                <div class="card-body">
+                    <h5 class="card-title">SOFA CAMA POISON </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> ANCHO Y LARGO : <br>1,80 x 0,90 mts</li>
+                    <li class="list-group-item">MODELO: SOFA CAMA POISON</li>
+                    <li class="list-group-item">$365.000</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">COMPRAR</a>
+                    <a href="carrito.html" class="card-link "> <i class="fa-solid fa-cart-shopping fa-lg"></i> </a>
+                </div>
             </div>
-            <div>-->
 
-            </div>
+
+            
         </section>
 
 

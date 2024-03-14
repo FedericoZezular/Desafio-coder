@@ -68,15 +68,15 @@ header.header .btn-outline-success {
   --bs-btn-border-color: #0000003f;
   --bs-btn-hover-color: $cl-white;
   --bs-btn-hover-bg: $cl-black;
-  --bs-btn-hover-border-color:$cl-black;
+  --bs-btn-hover-border-color: $cl-black;
   --bs-btn-focus-shadow-rgb: 25, 135, 84;
   --bs-btn-active-color: $cl-white;
-  --bs-btn-active-bg:$cl-black;
+  --bs-btn-active-bg: $cl-black;
   --bs-btn-active-border-color: $cl-black;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: $cl-black;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color:$cl-black;
+  --bs-btn-disabled-border-color: $cl-black;
   --bs-gradient: none;
 }
 header.header div .class-carrito {
@@ -85,6 +85,7 @@ header.header div .class-carrito {
   flex-wrap: wrap;
   right: 110px;
   bottom: 45px;
+  background-color: rgb(116, 116, 116);
 }
 
 main.main {
@@ -93,8 +94,8 @@ main.main {
   align-items: center;
   padding: 0px 0px 0px 0px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "carrusel carrusel carrusel" "cuotas transferencia wpp " "sofa sillas respaldo" "recomendaciones recomendaciones recomendaciones";
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "carrusel carrusel carrusel" "pagos pagos pagos" "cuotas transferencia wpp " "sofa sillas respaldo" "recomendaciones recomendaciones recomendaciones";
   gap: 50px 0px;
 }
 main.main .section-carru {
@@ -104,12 +105,28 @@ main.main .section-carru {
   flex-wrap: wrap;
   align-items: center;
 }
+main.main .section-carru .carousel {
+  width: 90%;
+}
+main.main .section-carru .slide {
+  width: 95%;
+}
+main.main .div-main-pagos {
+  grid-area: pagos;
+  border: 2px solid rgba(107, 107, 107, 0.749);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+}
 main.main .div-main-cuotas {
   grid-area: cuotas;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  font-size: 10px;
 }
 main.main .div-main-transferencia {
   grid-area: transferencia;
@@ -184,6 +201,27 @@ main.main .seudo-img-hover:hover h3 {
   flex-wrap: wrap;
   justify-content: center;
   font-size: 25px;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.inicio a {
+  color: rgb(44, 44, 44);
+  border: 2px outset rgba(116, 116, 116, 0.742);
+  list-style: none;
+  text-decoration: none;
+}
+.inicio a:hover {
+  color: rgb(0, 0, 0);
+  border: 2px outset rgba(0, 0, 0, 0.742);
+  list-style: none;
+  text-decoration: underline;
 }
 
 footer.footer {
@@ -280,6 +318,16 @@ footer.footer .footer-contacto a:hover {
 }
 .main-productos .todos-los-produtos .card .card-body .card-link:hover {
   color: black;
+}
+
+.div-main-pagos {
+  grid-area: pagos;
+  border: 2px solid rgba(107, 107, 107, 0.749);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 
 .main-contacto {

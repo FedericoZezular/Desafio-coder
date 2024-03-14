@@ -1,3 +1,10 @@
+.div-main-pagos {
+    grid-area: pagos;
+    border:2px solid $cl-bor;
+    @include flex-main (column, wrap, center);
+    width: 100%;
+}
+
 .main-contacto {
     @include flex-main-cont (column, flex-start);
     width: 90%;

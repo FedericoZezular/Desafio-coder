@@ -44,7 +44,7 @@ header.header {
     }
 
     .navbar-expand-lg .navbar-collapse {
-    
+
         padding: 0px 90px 0px 90px;
         background-color: $bg-white ;
     }
@@ -60,23 +60,28 @@ header.header {
         --bs-btn-border-color: #0000003f;
         --bs-btn-hover-color: $cl-white;
         --bs-btn-hover-bg: $cl-black;
-        --bs-btn-hover-border-color:$cl-black;
+        --bs-btn-hover-border-color: $cl-black;
         --bs-btn-focus-shadow-rgb: 25, 135, 84;
         --bs-btn-active-color: $cl-white;
-        --bs-btn-active-bg:$cl-black;
+        --bs-btn-active-bg: $cl-black;
         --bs-btn-active-border-color: $cl-black;
         --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
         --bs-btn-disabled-color: $cl-black;
         --bs-btn-disabled-bg: transparent;
-        --bs-btn-disabled-border-color:$cl-black;
+        --bs-btn-disabled-border-color: $cl-black;
         --bs-gradient: none;
     }
-     div{
+
+    div {
         .class-carrito {
             @include flex-carrito(absolute, inline-block, wrap);
             right: 110px;
             bottom: 45px;
+            background-color: rgb(116, 116, 116);
         }
-     }
-     
+    }
+
+   
+
+
 }

@@ -2,8 +2,9 @@ main.main {
     @include grid-main (center, center);
     padding: 0px 0px 0px 0px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas: "carrusel carrusel carrusel"
+        "pagos pagos pagos"
         "cuotas transferencia wpp "
         "sofa sillas respaldo"
         "recomendaciones recomendaciones recomendaciones";
@@ -14,11 +15,28 @@ main.main {
     .section-carru {
         grid-area: carrusel;
         @include flex-main (column, wrap, center);
+
+        .carousel {
+            width: 90%;
+        }
+
+        .slide {
+            width: 95%;
+        }
     }
+
+    .div-main-pagos {
+        grid-area: pagos;
+        border: 2px solid $cl-bor;
+        @include flex-main (column, wrap, center);
+        width: 80%;
+    }
+
 
     .div-main-cuotas {
         grid-area: cuotas;
         @include flex-main (column, wrap, center);
+        font-size: 10px;
     }
 
     .div-main-transferencia {
@@ -112,5 +130,27 @@ main.main {
     }
 
 
+
+
+
+}
+
+.inicio {
+    @include flex-nav (row, nowrap, center, center);
+    display: flex;
+    a{
+        color: rgb(44, 44, 44);
+       border: 2px outset rgba(116, 116, 116, 0.742);
+       list-style:none ;
+       text-decoration: none;
+
+       &:hover{
+        color: rgb(0, 0, 0);
+        border: 2px outset rgba(0, 0, 0, 0.742);
+        list-style:none ;
+        text-decoration: underline;
+       }
+    
+    }
 
 }
